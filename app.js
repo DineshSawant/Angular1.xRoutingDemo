@@ -3,7 +3,7 @@ var app = angular.module('ngRoutingDemo', ['ngRoute']);
     app.config(function ($routeProvider) {
              
         $routeProvider
-            .when('/', {
+            .when('/login', {
                 templateUrl: 'templates/login.html',
                 controller: 'loginController'
             })
@@ -12,14 +12,18 @@ var app = angular.module('ngRoutingDemo', ['ngRoute']);
                 controller: 'studentController'
             })
             .otherwise({
-                redirectTo: "/"
+                redirectTo: "/login"
             });    
     });
     app.controller("loginController", function ($scope, $location) {
        
         $scope.authenticate = function (username) {
             // write authentication code here.. 
-            $location.path('/student/' + username);
+            if(username === 'Dinesh') {
+                $location.path('/student/' + username);    
+            }else {
+                alert("Invalid Username");
+            }           
         };
 
     });
