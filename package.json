@@ -1,0 +1,23 @@
+{
+  "name": "angular_routing_demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DineshSawant/Angular1.xRoutingDemo.git"
+  },
+  "author": "Dinesh Sawant",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DineshSawant/Angular1.xRoutingDemo/issues"
+  },
+  "homepage": "https://github.com/DineshSawant/Angular1.xRoutingDemo#readme",
+  "devDependencies": {
+    "http-server": "^0.9.0"
+  }
+}
